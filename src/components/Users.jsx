@@ -22,10 +22,10 @@ const Users = () => {
     }
     return (
         <div>
-            <h2>{loadedUsers.length}</h2>
+            <h2>{users.length}</h2>
             <div>
                 {
-                    loadedUsers.map(user => <p key={user._id}>{user.name}:{user.email} {user._id}
+                    users.map(user => <p key={user._id}>{user.name}:{user.email} {user._id}
                     <Link to={`/update/${user._id}`}>
                     <button>Update</button>
                     </Link>
